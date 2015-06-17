@@ -8,29 +8,10 @@
 		</div>
 		{% for post in posts %}
 			<div>
-				<h2>This is Post # 1</h2>
 				<p><em>Published: {{post.published_date}}</em></p>
-				<ul>
-					<li>Title heading: h2</li>
-					<li><strong>example of strong text</strong></li>
-					<li><em>example of em text</em></li>
-				</ul>
+				<h1><a href="">{{post.title}}</a></h1>
 				<p>{{post.text|linebreaks}}</p>
 			</div>	
 		{% endfor %}
-		<div>
-			<h3>This is Post # 2</h3>
-			<ul>
-				<li>Title heading: h3</li>
-				<li>Unordered list</li>
-			</ul>
-		</div>
-		<div>
-			<h3>This is Post # 3</h3>
-			<ul>
-				<li>Title heading: h3</li>
-				<li><a href="http://djangoproject.com">Link to Django Official Website</a></li>
-			</ul>
-		</div>
 	</body>
 </html>
